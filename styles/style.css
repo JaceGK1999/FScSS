@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&display=swap');
 @keyframes pulse {
     0% {
         background-color: var(--color3);
@@ -25,7 +26,6 @@ main {
     align-self: center;
     align-items: center;
     justify-content: center;
-
 }
 header {
     background-color: var(--color1);
@@ -71,6 +71,70 @@ h1 {
 }
 
 .product-img {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 100%;
+}
+.product-des {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    padding: 15px, 15px;
+    margin: 15px;
+}
+/* carousel starting  */
+* {
+    box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.ads-carousel {
+    position: relative;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.row:after {
+    content: '';
+    display: table;
+    clear: both;
 }
