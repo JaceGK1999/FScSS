@@ -5,37 +5,49 @@ body {
     --color4: hsla(118, 26%, 27%, 1);
     --color5: hsla(9, 57%, 41%, 1);
 }
+main {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
 .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.4fr 1.3fr 1.3fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            'header header header'
-            'ads-carousel ads-carousel ads-carousel'
-            'product product2 product3';
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.3fr 1.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 'product product2 product3';
 }
 
-    .header {
-        grid-area: header;
-    }
+.ads-carousel {
+    justify-self: stretch;
+    align-self: stretch;
+    grid-area: ads-carousel;
+}
 
-    .ads-carousel {
-        justify-self: stretch;
-        align-self: stretch;
-        grid-area: ads-carousel;
-    }
+.product {
+    grid-area: product;
+    flex-direction: row;
+}
 
-    .product {
-        grid-area: product;
-    }
+.product2 {
+    grid-area: product2;
+}
 
-    .product2 {
-        grid-area: product2;
-    }
+.product3 {
+    grid-area: product3;
+}
 
-    .product3 {
-        grid-area: product3;
-    }
+.logo-img {
+    height: 100px;
+    width: 100px;
+}
+header {
+    margin: 10px;
+}
+.product-img {
+    height: 200px;
+    width: 200px;
 }
