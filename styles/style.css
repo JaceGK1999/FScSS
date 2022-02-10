@@ -5,7 +5,7 @@ body {
     --color4: hsla(118, 26%, 27%, 1);
     --color5: hsla(9, 57%, 41%, 1);
 }
-    .container {
+.container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 0.4fr 1.3fr 1.3fr;
@@ -15,7 +15,7 @@ body {
             'header header header'
             'ads-carousel ads-carousel ads-carousel'
             'product product2 product3';
-    }
+}
 
     .header {
         grid-area: header;
