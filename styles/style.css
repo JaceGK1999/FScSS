@@ -1,16 +1,42 @@
+@keyframes pulse {
+    0% {
+        background-color: var(--color3);
+    }
+    100% {
+        background-color: var(--color4);
+    }
+}
+
 body {
     --color1: hsla(349, 48%, 9%, 1);
     --color2: hsla(195, 9%, 82%, 1);
     --color3: hsla(214, 37%, 44%, 1);
     --color4: hsla(118, 26%, 27%, 1);
     --color5: hsla(9, 57%, 41%, 1);
+
+    animation: pulse 10s infinite alternate;
+
+    font-family: 'Titillium Web', sans-serif;
 }
+
 main {
     display: flex;
     flex-direction: column;
     align-self: center;
     align-items: center;
     justify-content: center;
+
+}
+header {
+    background-color: var(--color1);
+    margin: 10px;
+}
+h1 {
+    color: var(--color2);
+}
+.product {
+    margin: 100px;
+    background-color: var(--color5);
 }
 .container {
     display: grid;
@@ -27,16 +53,15 @@ main {
     grid-area: ads-carousel;
 }
 
-.product {
+#product {
     grid-area: product;
-    flex-direction: row;
 }
 
-.product2 {
+#product2 {
     grid-area: product2;
 }
 
-.product3 {
+#product3 {
     grid-area: product3;
 }
 
@@ -44,9 +69,7 @@ main {
     height: 100px;
     width: 100px;
 }
-header {
-    margin: 10px;
-}
+
 .product-img {
     height: 200px;
     width: 200px;
